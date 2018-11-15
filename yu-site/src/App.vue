@@ -1,11 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-        <bubble></bubble>
-        <!-- 这事一个起始页面，包含了所有窗口的对接路由通道。 -->
         <transition name="fade">
         <router-view></router-view>
-        <!-- 这是一个其副页面展示窗口 -->
+        <!-- 一切皆是view。这里就是一个空壳子，主题内容需要自己去填充。 -->
         </transition> 
     </div>
   </div>

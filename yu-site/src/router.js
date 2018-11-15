@@ -14,11 +14,11 @@ export default new Router({
       path: '/',
       redirect: 'bubble',
     },
-    // {
-    //   path: '/bubble',
-    //   name: 'bubble',
-    //   component: Bubble,
-    // },//这里加着你会发现bubble中在App.vue中的动画效果有重影，这里猜测这个路由和上面默认路由重叠了！！。
+    {
+      path: '/bubble',
+      name: 'bubble',
+      component: Bubble,
+    },
     {
       path: '/life',
       name: 'life',

@@ -16,7 +16,7 @@
                 扣扣：<input type="text">
             </div>
             <div class="contact-from-input">
-                电话：<input type="number">
+                电话：<input type="text">
             </div>
         </form>
     </div>

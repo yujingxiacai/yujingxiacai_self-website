@@ -90,6 +90,7 @@ export default {
     z-index: 999;
     color: #64a0c4;
     &-link{
+        outline: none;
         img{
            width: .3rem;
            vertical-align: middle
