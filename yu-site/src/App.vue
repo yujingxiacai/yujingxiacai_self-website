@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      <div id="backimg"></div>
         <transition name="fade">
         <router-view></router-view>
         <!-- 一切皆是view。这里就是一个空壳子，主题内容需要自己去填充。 -->
@@ -19,6 +20,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#backimg{
+background:url(./../public/img/images.jpg) center no-repeat/cover; 
+position: fixed; 
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -100;
+}
 .fade{
      &-enter {
        opacity: 0;

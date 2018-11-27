@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c63a181f-b637-49db-9e41-a3792e849ce5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/public/data/life.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/public/img/IMG_20180826_145819_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/public/img/IMG_20180826_192650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/public/img/IMG_20180826_201319.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/yu-site/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yu-site/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/src/components/Bubble.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yu-site/src/components/Bubble.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/src/components/Contact.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yu-site/src/components/Contact.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/yu-site/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/yu-site/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yu-site/src/views/Life.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yu-site/src/views/Life.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,8 +24,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/yu-site/node_modules" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/yu-site/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="96" />
@@ -49,7 +40,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="yujingxiacai_self-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yujingxiacai_self-website" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -89,18 +90,19 @@
       <workItem from="1535024711958" duration="646000" />
       <workItem from="1536378412430" duration="122000" />
       <workItem from="1536410780007" duration="1055000" />
+      <workItem from="1542973242557" duration="5000" />
+      <workItem from="1542975481502" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1828000" />
+    <option name="totallyTimeSpent" value="1842000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="81" width="1024" height="582" extended-state="0" />
+    <frame x="96" y="101" width="1280" height="728" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18910891" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18908228" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -109,6 +111,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

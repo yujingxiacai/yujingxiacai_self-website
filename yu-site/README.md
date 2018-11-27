@@ -1,21 +1,27 @@
-# yu-site
+# yu-site（yujingxiacai个人网站）
 
-## Project setup
-```
-npm install
-```
+## 个人网站简介
+#### 1.背景：
+        基于对自己的vue的知识整体的复习，我决定做一个个人网站，它是集技术博客，生活日常和周边故事的一个响应式网站。
+#### 2.技术点:
+        vue.js,
+        animate.css,
+        viewport,
+        ajax,
+        json,
+        懒加载，
+        动态分页，
+        随机动态壁纸
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 网站地址
+    www.yujingxiacai.com
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+## 展示动图
+#### 1.主页
+        。。。修改开发中
+#### 2.生活栏 
+        。。。修改开发中
+#### 3.博客栏 
+        。。。修改开发中
+#### 4.故事栏 
+        。。。修改开发中

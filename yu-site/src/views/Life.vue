@@ -19,43 +19,54 @@ export default {
         }
     },
     methods: {
-        
+        geturl(){
+            let url='/data/lifeimg.json';
+        Axios.get(url).then(res=>{
+              this.lifeDetail=this.lifeDetail.concat(res.data.lifeImg.slice(this.lifeDetail.length,this.lifeDetail.length+3));  
+            // this.lifeDetail=res.data.lifeImg;
+            // console.log(this.lifeDetail.lifeImg);ajax里面是无法获取当前this的lifeDetail的信息的。属于异步加载，因为
+        })
+        }
     },
     computed:{
-
+        
     },
     watch:{
 
     },
     
     created() {
-        let url='/data/lifeimg.json';
-        Axios.get(url).then(res=>{
-            this.lifeDetail=res.data.lifeImg;
-            console.log(res.data.lifeImg);
-        })
+        this.geturl();
+    },
+    mounted() {
+        window.onscroll=()=>{
+           let htmlscroheight= document.documentElement.scrollHeight;
+           let htmlscrolltop= document.documentElement.scrollTop;
+           let htmlclientheight= document.documentElement.clientHeight;
+            
+            let sum=Math.floor(htmlscrolltop+htmlclientheight);
+            console.log(htmlscroheight,htmlscrolltop,htmlclientheight,sum);
+            if(htmlscroheight==sum){
+                this.geturl();
+            }
+        }
     },
 }
 </script>
 
 
 <style lang="scss" scoped>
+
 .life-wrapper{
 font-size: .1rem; 
 color: #ffffff;
 // 下面的两个属性加在ul上会出现元素外移的bug，在ul外面套一层div，把该属性放到div外壳中，没问题，但是也没有起作用。待思考！！
-width: 20rem;
-margin: 1rem auto;
+// width: 20rem;
+// margin: 1rem auto;
 }
 .life{
 
 
-position: fixed;
-top:0;
-right: 0;
-left: 0;
-z-index: 999;
-bottom: 0;
 overflow-Y:scroll;
     &-item{
         
