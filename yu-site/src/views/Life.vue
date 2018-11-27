@@ -44,9 +44,10 @@ export default {
            let htmlscrolltop= document.documentElement.scrollTop;
            let htmlclientheight= document.documentElement.clientHeight;
             
-            let sum=Math.floor(htmlscrolltop+htmlclientheight);
+            let sum=Math.ceil(htmlscrolltop+htmlclientheight);
             console.log(htmlscroheight,htmlscrolltop,htmlclientheight,sum);
             if(htmlscroheight==sum){
+                console.log("yes!!!!");
                 this.geturl();
             }
         }

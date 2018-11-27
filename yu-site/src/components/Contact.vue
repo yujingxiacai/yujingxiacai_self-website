@@ -18,6 +18,9 @@
             <div class="contact-from-input">
                 电话：<input type="text">
             </div>
+            <div class="contact-from-input">
+                <button id="butsubmit" onclick="pushcontext">确认提交</button>
+            </div>
         </form>
     </div>
 </template>
@@ -47,11 +50,11 @@ export default {
 
 <style lang="scss" scoped>
 .contact{
-    padding-top: 50%;//这里之前用的是margin，外边距，这就导致了在移动端测试时会莫名的多出一段空白，下滑时，这是因为外边距将body整体挤到下面。
+    padding-top: 100%;//这里之前用的是margin，外边距，这就导致了在移动端测试时会莫名的多出一段空白，下滑时，这是因为外边距将body整体挤到下面。
     margin-left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    font-size: .1rem;
+    font-size: .2rem;
     color: #ffffff;
     &-cardcase{
         &-header{
@@ -59,5 +62,33 @@ export default {
         }
     }
 
+}
+.contact-from-input{
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    input{
+        color: #000000;
+    }
+   
+    #butsubmit{
+        font-size: .2rem;
+        background-color: #39a9ed;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-left: .6rem;
+        border-radius: .1rem ;
+        border:0;
+        
+    }
+    
+}
+@media (max-width: 302px) {
+    // 大于1024时出现这个效果
+   #butsubmit{
+        
+        margin-left: 0 !important;
+      
+        
+    }
 }
 </style>
