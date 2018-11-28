@@ -19,7 +19,7 @@
                 电话：<input type="text">
             </div>
             <div class="contact-from-input">
-                <button id="butsubmit" onclick="pushcontext">确认提交</button>
+                <button id="butsubmit" @click.prevent="pushcontext()">确认提交</button>
             </div>
         </form>
     </div>
@@ -34,6 +34,12 @@ export default {
         }
     },
     methods: {
+        pushcontext(){
+            
+            console.log('but11');
+            window.history.go(-1);//但是这样呢，多页面就不好了，目前就这样先用着。
+            return false;//可以组织，为什么用v-on时不能实现阻止默认事件呢？
+        }
         
     },
     computed:{
@@ -44,6 +50,9 @@ export default {
     },
     created() {
         
+    },
+    mounted() {
+
     },
 }
 </script>
@@ -87,8 +96,7 @@ export default {
    #butsubmit{
         
         margin-left: 0 !important;
-      
-        
+       
     }
 }
 </style>

@@ -43,10 +43,11 @@ export default {
            let htmlscroheight= document.documentElement.scrollHeight;
            let htmlscrolltop= document.documentElement.scrollTop;
            let htmlclientheight= document.documentElement.clientHeight;
-            
-            let sum=Math.ceil(htmlscrolltop+htmlclientheight);
-            console.log(htmlscroheight,htmlscrolltop,htmlclientheight,sum);
-            if(htmlscroheight==sum){
+            //浏览器有时候会出现问题就是滚动条的top不准确，有时行，有时不行。所以干脆来个范围。
+            let sumTop=Math.ceil(htmlscrolltop+htmlclientheight);
+            let sumbuttom=Math.floor(htmlscrolltop+htmlclientheight);
+            console.log(htmlscroheight,htmlscrolltop,htmlclientheight,sumTop,sumbuttom);
+            if(htmlscroheight<=sumTop&&htmlscroheight>=sumbuttom){
                 console.log("yes!!!!");
                 this.geturl();
             }
