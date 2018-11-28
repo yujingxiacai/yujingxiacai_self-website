@@ -31,7 +31,7 @@ export default {
            bottonDetail:[{
             src:'/img/life.png',
             name:'生活',
-            discription:'这里没有常理可言，我的森林需要你来探索，一个生活记录的是一个人',
+            discription:'这里没有常理可言，我的森林需要你来探索，生活记录的是一个人',
             path:'/life',
             isEnter: false,
            },{
