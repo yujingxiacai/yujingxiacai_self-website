@@ -2,7 +2,7 @@
     <div class="contact">
         <div class="contact-cardcase">
             <p class="contact-cardcase-header">名片</p>
-            <p>GitHub上见：https://github.com/yujingxiacai</p><a href="http://www.github.com/yujingxiacai" id="githubi"><i class="iconfont icon-GitHub"></i></a>
+            <p class="contact-cardcase-gith">我的GitHub，欢迎进入...<a href="http://www.github.com/yujingxiacai" id="githubi"><i class="iconfont icon-GitHub"></i></a></p>
         </div>
         <form action="" class="contact-from">
             <p>那么你联系方式是？·—·</p>
@@ -68,14 +68,25 @@ export default {
     color: #ffffff;
     &-cardcase{
         position: relative;
-        #githubi :hover{
+       
+        &-header{
+            font-size: .2rem;
+            text-align: center;
+        }
+        &-gith{
+            font-size: .2rem;
+            border: .01rem #3d85b6 dashed;
+            
+            height: .4rem;
+            text-align: center;
+             #githubi :hover{
             color: #000000;
                transform: scale(1.2,1.2);
             }
         #githubi{
-            position: absolute;
-            top:1.1rem;
-            right: -.1rem;
+            // position: absolute;
+            // top:.7rem;
+            // right: -.1rem;
             outline: none;
             color: #ffffff;
             text-decoration: none;
@@ -86,8 +97,6 @@ export default {
    
 
         }
-        &-header{
-            font-size: .4rem;
         }
     }
 
@@ -104,7 +113,7 @@ export default {
         background-color: #39a9ed;
         padding-left: .5rem;
         padding-right: .5rem;
-        margin-left: .6rem;
+        // margin-right: 0;
         border-radius: .1rem ;
         border:0;
         

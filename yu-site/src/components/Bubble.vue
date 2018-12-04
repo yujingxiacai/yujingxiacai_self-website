@@ -10,9 +10,9 @@
        
         <div class="home">
             <div class="home-radio" v-for="(botton,index) in bottonDetail" :key="index">
-                <img :src="botton.src" alt="" >
+                <img :src="botton.src" :alt="botton.discription" :title="botton.discription">
                 <br>
-                <span @click="linkTo(botton)"><router-link :to="botton.path" class="home-radio-link"  >生活</router-link></span>
+                <span @click="linkTo(botton)"><router-link :to="botton.path" class="home-radio-link"  >{{botton.name}}</router-link></span>
                 <!-- router-link不能添加点击事件。 -->
             </div>
         </div> 
@@ -38,13 +38,13 @@ export default {
             src:'/img/story.png',
             name:'故事',
             discription:'让我给你讲个故事吧，虽然它真的很平庸，但我总觉的它能让你我更加近距离的畅谈心声，慰藉彼此的灵魂',
-            path:'/life',
+            path:'/story',
             isEnter: false,
            },{
             src:'/img/write.png',
             name:'博客',
             discription:'技术的沧海桑田中怎么能没有我的一片浪花呢？',
-            path:'/life',
+            path:'/blog',
             isEnter: false,            
            }
            ],
@@ -90,6 +90,7 @@ export default {
     z-index: 999;
     color: #64a0c4;
     &-link{
+       
         outline: none;
         img{
            width: .3rem;
@@ -136,7 +137,8 @@ export default {
            
        } 
        &-link{
-           opacity: 0;
+            color: #ffffff;
+           opacity: 1;
            font-size:.2rem;
            outline: none;
        }
