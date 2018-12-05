@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 #backimg{
-background:url(./../public/img/images.jpg) center no-repeat/cover; 
+background:url(/img/images.jpg) center no-repeat/cover; 
 position: fixed; 
     top:0;
     right: 0;

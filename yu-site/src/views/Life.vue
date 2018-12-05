@@ -40,6 +40,7 @@ export default {
     },
     mounted() {
         window.onscroll=()=>{
+            // alert('123');//用于测试手机端为下滑是否兼容，发现监控下拉事件时兼容的
            let htmlscroheight= document.documentElement.scrollHeight;
            let htmlscrolltop= document.documentElement.scrollTop;
            let htmlclientheight= document.documentElement.clientHeight;
@@ -47,11 +48,14 @@ export default {
             let sumTop=Math.ceil(htmlscrolltop+htmlclientheight);
             let sumbuttom=Math.floor(htmlscrolltop+htmlclientheight);
             console.log(htmlscroheight,htmlscrolltop,htmlclientheight,sumTop,sumbuttom);
+            // alert(htmlscroheight+'~'+sumbuttom+'~'+sumTop);//手机浏览输出的永远是876~715~715 确实是监听了，但是就是再也划不动了这个时候！！
             if(htmlscroheight<=sumTop&&htmlscroheight>=sumbuttom){
                 console.log("yes!!!!");
+                // alert(sumbuttom);//手机端根本就无法进入。
                 this.geturl();
             }
         }
+        //综合问题应该出现在我们的 ，在于手机的浏览器默认不兼容这个尺寸监控，可能手机浏览器bug。
     },
 }
 </script>
